@@ -30,6 +30,7 @@ func main() {
 			result[i] = "ノーマル"
 		case num < 95:
 			// TODO: resultのi番目に"R"を代入する
+			result[i] = "R"
 		case num < 99:
 			result[i] = "SR"
 		default:
