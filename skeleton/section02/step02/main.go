@@ -30,7 +30,7 @@ func main() {
 	}
 
 	// TODO: 長さnの文字列型のスライスを変数resultとして定義する
-	var result[1] string
+	result := make([]string, n)
 
 	for i := 0; i < len(result) ; i++ {
 
