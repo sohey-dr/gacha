@@ -39,6 +39,7 @@ func inputN(p *gacha.Player) int {
 
 func saveResults(results []*gacha.Card) {
 	// TODO: results.txtというファイルを作成する
+		f, err := os.Create("results.txt")
 
 	if err != nil {
 		fmt.Println(err)
@@ -53,6 +54,7 @@ func saveResults(results []*gacha.Card) {
 
 	for _, result := range results {
 		// TODO: fmt.Fprintln関数を使ってresultをファイルに出力する
+		fmt.Fprintf(f, "%s", result)
 	}
 }
 
