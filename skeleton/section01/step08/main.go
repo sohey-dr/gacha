@@ -23,6 +23,7 @@ func main() {
 			fmt.Print(">")
 			var kind int
 			// TODO: 変数kindに入力した値を入れる
+			fmt.Scanln(&kind)
 
 			switch kind {
 			case 1: // 単発ガチャ
@@ -30,13 +31,14 @@ func main() {
 				break LOOP
 			case 2: // 11連ガチャ
 				// TODO: 変数nに11を入れる
-
+				n = 11
 				break LOOP
 			default:
 				fmt.Println("もう一度入力してください")
 			}
+		}
 
-		for i := 1; /* TODO: 継続条件をiがn以下の場合とする */; i++ {
+		for i := 1; i <= n; i++ {
 
 			// 0から99までの間で乱数を生成する
 			num := rand.Intn(100)
@@ -57,5 +59,4 @@ func main() {
 				fmt.Println("XR")
 			}
 		}
-	}
 }
