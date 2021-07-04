@@ -32,6 +32,7 @@ func main() {
 	rand.Seed(time.Now().Unix())
 
 	// TODO: 10枚のガチャ券を持ったプレイヤーを作る
+	p := player{tickets: 10}
 
 	n := inputN(&p)
 	results, summary := drawN(&p, n)
@@ -46,6 +47,9 @@ func inputN(p *player) int {
 		fmt.Print("ガチャを引く回数>")
 		fmt.Scanln(&n)
 		// TODO: nが0より大きくp.tickets以下である場合はbreak
+		if n > 0 && n <= p.tickets {
+			break
+		}
 
 		fmt.Printf("1以上%d以下の数を入力してください\n", p.tickets)
 	}
@@ -54,6 +58,7 @@ func inputN(p *player) int {
 
 func drawN(p *player, n int) ([]card, map[rarity]int) {
 	// TODO: p.ticketsをnだけ減らす
+	p.tickets -= n
 
 	results := make([]card, n)
 	summary := make(map[rarity]int)
