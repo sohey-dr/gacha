@@ -14,7 +14,7 @@ func main() {
 	card.rarity = "ノーマル"
 
 	// TODO: 変数cardのnameフィールドに"スライム"と代入
-	card.name = ""
+	card.name = "スライム"
 
 	fmt.Println(card)
 }
