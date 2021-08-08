@@ -14,7 +14,7 @@ func main() {
 
 	n := inputN(p)
 	// TODO: gacha.DrawN関数を呼び、変数resultsとsummaryに結果を代入する
-	results, summary := gacha.DrawN()
+	results, summary := gacha.DrawN(p, n)
 
 	fmt.Println(results)
 	fmt.Println(summary)
