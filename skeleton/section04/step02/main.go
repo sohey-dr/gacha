@@ -10,6 +10,7 @@ import (
 
 func main() {
 	// TODO: ガチャ券10枚、コイン100枚を持ったプレイヤーを作る
+	p := gacha.NewPlayer(10, 100)
 
 	n := inputN(p)
 	// TODO: gacha.DrawN関数を呼び、変数resultsとsummaryに結果を代入する
