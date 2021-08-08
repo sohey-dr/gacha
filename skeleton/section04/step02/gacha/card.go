@@ -20,5 +20,5 @@ type Card struct {
 }
 
 func (c *Card) String() string {
-	return c.rarity.String() + ":" + c.name
+	return c.Rarity.String() + ":" + c.Name
 }
