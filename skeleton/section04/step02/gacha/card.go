@@ -15,8 +15,8 @@ func (r Rarity) String() string {
 
 // TODO: フィールドをエクスポートする
 type Card struct {
-	rarity Rarity // レア度
-	name   string // 名前
+	Rarity Rarity // レア度
+	Name   string // 名前
 }
 
 func (c *Card) String() string {
