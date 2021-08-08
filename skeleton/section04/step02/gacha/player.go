@@ -10,6 +10,9 @@ type Player struct {
 // TODO: 引数にガチャ券とコインの枚数をもらい、
 // それぞれをフィールドに設定したPlayer型の値を生成し、
 // そのポインタを返すNewPlayer関数を作る
+func NewPlayer(tickets int, coin int) *Player {
+	return &Player{tickets: tickets, coin: coin}
+}
 
 // TODO: メソッドをエクスポートする
 // プレイヤーが行えるガチャの回数
