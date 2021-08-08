@@ -21,7 +21,7 @@ func main() {
 }
 
 // TODO: 引数の型をgacha.Playerのポインタにする
-func inputN(p player) int {
+func inputN(p *gacha.Player) int {
 
 	max := p.DrawableNum()
 	fmt.Printf("ガチャを引く回数を入力してください（最大:%d回）\n", max)
