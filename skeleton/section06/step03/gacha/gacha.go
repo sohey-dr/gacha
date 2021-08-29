@@ -52,6 +52,7 @@ func (p *Play) Draw() bool {
 
 	if err := p.player.draw(1); err != nil {
 		// TODO: エラーをフィールドに代入する
+		p.err = err
 
 		return false
 	}
