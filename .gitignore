@@ -1,3 +1,4 @@
 *.db
 *.txt
 trace.out
+solution/
